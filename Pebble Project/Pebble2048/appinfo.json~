@@ -1,0 +1,27 @@
+{
+  "uuid": "2becaf0a-9b51-4bd9-9070-f834db2fbaad",
+  "shortName": "Pebble2048",
+  "longName": "Pebble2048",
+  "companyName": "MakeAwesomeHappen",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+      {
+         "type": "png",
+         "name": "IMAGE_WIN",
+         "file": "images/WIN.png"
+      },
+      {
+         "type": "png",
+         "name": "IMAGE_LOSE",
+         "file": "images/LOSE.png"
+      }]
+  }
+}
