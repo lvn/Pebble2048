@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pebble 2048</string>
+    <string name="currentScore">2</string>
+     <string name="start">Start</string>
+      <string name="end">End</string>
+      <string name="send">Send Message</string>
+      <string name="sendNotification">Send Notification</string>
+    <string name="update">Update!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
