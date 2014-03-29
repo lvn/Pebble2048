@@ -3,5 +3,4 @@
 ### and also [Andy Baek](https://github.com/abaek), [Laurence Li](https://github.com/laurnc), [Joshua Simpson](https://github.com/joshwvs)
 
 ## Description
-An adaptation of 2048 on the Pebble Smartwatch showcasing various features of the Pebble SDK.
-
+An adaptation of 2048 on Pebble, controlled by the accelerometer.
