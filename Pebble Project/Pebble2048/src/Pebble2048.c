@@ -34,12 +34,12 @@ static int update_score(int dscore);
 static void send_score_to_android();
 /*BitmapLayer *win_layer;
 BitmapLayer *lose_layer;*/
-BitmapLayer *game_end_display;
-GBitmap *win_img;
-GBitmap *lose_img;
+BitmapLayer *game_end_display; // bitmap layer for end game message display
+GBitmap *win_img; // bitmap image for win screen
+GBitmap *lose_img; // bitmap image for lose screen
 
 // accelerometer stuff
-static AppTimer *timer;
+static AppTimer *timer; 
 int accel_sensitivity = 600;
 int accel_interval = 250;
 
@@ -51,8 +51,7 @@ static int pwr2(int pwr)
   return ((pwr == 0) ? 1 : (2 * pwr2(pwr - 1)));
 }
 
-
-
+// update cell
 static void update_cell(int index, int new_number)
 {
   *(grid_entries + index) = new_number;
@@ -100,6 +99,10 @@ static void draw_grid(Layer *layer, GContext* ctx)
 
   return;
 }
+
+// update grid: updates each piece of the grid on a single direction. If the blocks of 
+//  the grid haven't been fully pushed to the end, the function recurses. Also checks
+//  win and lose conditions.
 
 static void update_grid(int direction, bool is_auto)
 { 
@@ -333,6 +336,7 @@ static int update_score(int dscore)
   return 0;
 }
 
+// sends the current game score to android
 static void send_score_to_android()
 {
 
@@ -341,8 +345,7 @@ static void send_score_to_android()
 
 
 // functions that i didn't add
-
-bool selectToggle = false;
+bool selectToggle = false; // toggles whether up/down click goes up/down or left/right. Toggled by select button.
 
 static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
   //text_layer_set_text(text_layer, "Select");
