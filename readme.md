@@ -14,9 +14,11 @@ The Pebble2048 game is available on the Pebble app store.
 1. Making sure you have already installed the [Pebble 2.0 SDK](https://developer.getpebble.com/2/getting-started/) on a Unix OS, download the `pebble_app` folder from this repository. 
 2. Connect the smartphone with which your Pebble Smartwatch is paired to the same Wi-Fi network as your machine.
 3. On a terminal, navigate to `pebble_app` on your machine. Then run the commands
-
+   
+   ```
    pebble build
    pebble install --phone $PHONE_IP
+   ```
 
 where `$PHONE_IP` is the IP of your smartphone on the network.
 
